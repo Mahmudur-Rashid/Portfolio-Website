@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar {
+	z-index: 1;
+	background-color: rgb(216, 104, 0);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		li {
+			display: inline-block;
+			list-style-type: none;
+			a {
+				font-size: 1.2em;
+				font-weight: 600;
+				display: block;
+				text-transform: capitalize;
+				text-decoration: none;
+				color: white;
+				padding: 20px;
+			}
+			a:hover {
+				transition: 0.2s all ease-in-out;
+				background-color: white;
+				color: rgb(216, 104, 0);
+			}
+		}
+	}
+}
+#welcome-section {
+	text-align: center;
+	font-size: 2rem;
+	background: linear-gradient(135deg, rgb(63, 63, 63), rgb(36, 36, 36));
+	color: #fff;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px;
+	p {
+		font-style: italic;
+		color: rgb(216, 104, 0);
+	}
+}
+#projects {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 1fr));
+	grid-template-rows: repeat(2, minmax(300px, 1fr));
+	grid-gap: 20px;
+	padding: 25px 20px;
+	background-color: rgb(57, 104, 126);
+	h2 {
+		font-weight: 600;
+		text-align: center;
+		padding: 40px;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+		background-color: rgb(36, 36, 36);
+	}
+	a:hover {
+		transition: 0.4s all ease-in-out;
+		img {
+			transition: 0.4s all ease-in-out;
+			background-color: black;
+			opacity: 0.3;
+		}
+		h2 {
+			transition: 0.4s all ease-in-out;
+			color: rgb(216, 104, 0);
+		}
+	}
+}
+.project-tile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 100%;
+	}
+}
+#contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 80vh;
+	background-color: rgb(63, 63, 63);
+	color: white;
+	h1 {
+		text-transform: capitalize;
+		text-shadow: 3px 1px 2px rgb(36, 36, 36);
+		font-size: 3rem;
+		padding: 10px;
+	}
+	p {
+		color: rgb(216, 104, 0);
+		font-size: 1.3rem;
+		font-style: italic;
+	}
+	i {
+		padding: 10px;
+	}
+	ul {
+		li {
+			list-style-type: none;
+			display: inline;
+			a {
+				font-size: 1.8rem;
+				text-shadow: 3px 1px 2px rgb(36, 36, 36);
+				display: inline-block;
+				padding: 20px 10px;
+				text-decoration: none;
+				color: white;
+			}
+			a:hover {
+				transition: 0.5s all ease;
+				transform: translate(0, 15px);
+				color: rgb(216, 104, 0);
+			}
+		}
+	}
+}
+footer {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 5px solid rgb(216, 104, 0);
+	background-color: rgb(63, 63, 63);
+	padding: 40px 0px;
+	p {
+		font-size: 1.2rem;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 700px) {
+	#navbar {
+		ul {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	#welcome-section {
+		font-size: 1.8rem;
+	}
+	#projects {
+		display: block;
+		h2 {
+			padding: 30px;
+		}
+		a:hover {
+			font-size: 1.1rem;
+			h2 {
+				padding: 40px;
+			}
+		}
+	}
+	.project-tile {
+		margin-bottom: 50px;
+	}
+	#contact {
+		h1 {
+			font-size: 2.1rem;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+
+		ul {
+			li {
+				display: inline;
+				a {
+					display: inline-block;
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+	footer {
+		display: block;
+		text-align: center;
+		p {
+			margin: 20px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	#navbar {
+		ul {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	#welcome-section {
+		font-size: 1.5rem;
+	}
+	#projects {
+		display: block;
+		h2 {
+			padding: 30px;
+		}
+		a:hover {
+			font-size: 1.1rem;
+			h2 {
+				padding: 40px;
+			}
+		}
+	}
+	.project-tile {
+		margin-bottom: 50px;
+	}
+	#contact {
+		height: auto;
+		h1 {
+			padding: 40px 0 0 0;
+			font-size: 1.9rem;
+		}
+		p {
+			font-size: 1.1rem;
+		}
+		i {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		ul {
+			margin: 20px 0 0 0;
+			li {
+				display: block;
+				a {
+					display: block;
+					font-size: 2rem;
+					text-align: center;
+				}
+				a:hover {
+					i {
+						transition: 0.2s all ease-in-out;
+						font-size: 4rem;
+					}
+				}
+			}
+		}
+	}
+	footer {
+		display: block;
+		text-align: center;
+		p {
+			margin: 20px;
+		}
+	}
+}
