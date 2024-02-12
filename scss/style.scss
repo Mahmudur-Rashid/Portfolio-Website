@@ -70,9 +70,9 @@ body {
 		color: white;
 		text-decoration: none;
 		background-color: rgb(36, 36, 36);
+		transition: 0.4s all ease-in-out;
 	}
 	a:hover {
-		transition: 0.4s all ease-in-out;
 		img {
 			transition: 0.4s all ease-in-out;
 			background-color: black;

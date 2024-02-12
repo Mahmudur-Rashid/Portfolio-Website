@@ -76,8 +76,6 @@ body {
   color: white;
   text-decoration: none;
   background-color: rgb(36, 36, 36);
-}
-#projects a:hover {
   transition: 0.4s all ease-in-out;
 }
 #projects a:hover img {
