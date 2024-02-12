@@ -125,9 +125,9 @@ body {
 				padding: 20px 10px;
 				text-decoration: none;
 				color: white;
+				transition: 0.5s all ease-in-out;
 			}
 			a:hover {
-				transition: 0.5s all ease;
 				transform: translate(0, 15px);
 				color: rgb(216, 104, 0);
 			}
